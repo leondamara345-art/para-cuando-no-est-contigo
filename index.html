@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Para cuando no esté contigo</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #eee6d8;
+      color: #2d241f;
+      font-family: Georgia, "Times New Roman", serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 900px;
+      min-height: 620px;
+      background: #f8f3e9;
+      border: 1px solid #c9bba8;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 30px;
+      box-shadow: 0 15px 40px rgba(45, 36, 31, 0.12);
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 1px solid #d6c9b8;
+      pointer-events: none;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 650px;
+    }
+
+    .small {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #75675b;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 78px);
+      font-weight: normal;
+      line-height: 0.95;
+      letter-spacing: -2px;
+      margin-bottom: 28px;
+    }
+
+    .line {
+      width: 55px;
+      height: 1px;
+      background: #7b252d;
+      margin: 0 auto 28px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      line-height: 1.7;
+      font-style: italic;
+      color: #62564d;
+      margin-bottom: 45px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 35px;
+      border: 1px solid #2d241f;
+      color: #2d241f;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background: #2d241f;
+      color: #f8f3e9;
+    }
+
+    .signature {
+      margin-top: 55px;
+      font-size: 14px;
+      color: #8a7b6d;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        min-height: 580px;
+        padding: 45px 25px;
+      }
+
+      .page::before {
+        inset: 12px;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <section class="content">
+
+      <div class="small">para rafa · 2026</div>
+
+      <h1>Para cuando<br>no esté contigo</h1>
+
+      <div class="line"></div>
+
+      <p class="subtitle">
+        Un pequeño lugar para encontrarnos<br>
+        mientras tanto.
+      </p>
+
+      <a href="#" class="button">Entrar</a>
+
+      <p class="signature">
+        hecho con amor ♡
+      </p>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
